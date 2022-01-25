@@ -1,0 +1,50 @@
+<div class="centerMe">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <a routerLink="/cities/{{ cities[0].id }}">
+          <img [src]="images[0]" alt="Random second slide"  class="img-responsive img">
+       </a>
+      </div>
+      <div class="carousel-caption">
+        <h3>{{cities[0].city}}</h3>
+        <p>Current temp:</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <a routerLink="/cities/{{ cities[1].id }}">
+            <img [src]="images[1]" class="img-responsive img" alt="Random second slide">
+         </a>
+      
+      </div>
+      <div class="carousel-caption">
+        <h3>{{cities[1].city}}</h3>
+        <p>Current temp:</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <a routerLink="/cities/{{ cities[2].id }}">
+          <img [src]="images[2]" class="img-responsive img" alt="Random second slide">
+       </a>
+      </div>
+      <div class="carousel-caption">
+        <h3>{{cities[2].city}}</h3>
+        <p>Current temp:</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <a routerLink="/cities/{{ cities[3].id }}">
+          <img [src]="images[3]" class="img-responsive img" alt="Random second slide">
+       </a>
+      </div>
+      <div class="carousel-caption">
+        <h3>{{cities[3].city}}</h3>
+        <p>Current temp:</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+
+</div>

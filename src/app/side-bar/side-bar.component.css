@@ -1,0 +1,27 @@
+.cityname,
+.img-small{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    /* width: 30%; */
+    /* margin-left: 1em; */
+}
+.img-small{
+    width: 30%;
+}
+.citybox{
+    padding: 0 20px;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    border: solid 1px black;
+   border-radius: 20px;
+   height: 10vh;
+}

@@ -1,0 +1,16 @@
+
+.brand{
+    width:100%;
+    bottom:25px;
+    margin-left:10%;
+    position: relative !important;
+}
+.brand:hover{
+   scale: 1.3em;;
+}
+.search{
+    /* position: relative !important;
+     margin-right: 60px !important; */
+    /* width: 00px !important; */
+    /* bottom:20px; */
+}

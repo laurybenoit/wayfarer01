@@ -1,0 +1,16 @@
+<form class="form-inline">
+    <!-- <br> <input (keyup)="findWeather(zip,unit)" [(ngModel)]="zip" type="text" class="form-control" placeholder="Zip Code Here"/>
+    -->
+    <input (keyup)="findWeather(zip,unit)" [(ngModel)]="zip" class="form-control search m-5" type="search" placeholder="Search" aria-label="Search">  
+  </form>
+  <section *ngIf="weather">
+    <h3>Here's the weather in {{ weather.name}} :</h3>
+    <img src="http://openweathermap.org/img/wn/{{ weather.weather[0].icon }}@2x.png" class="img img-thumbnail mb-2" width="10%" alt="" srcset="">
+ 
+    <p>
+        Currently   {{ weather.weather[0].description }} with temperature: {{ weather.main.temp}}
+    </p>
+    <p>There's a high of {{weather.main.temp_max}} degrees and a low of {{weather.main.temp_min}}</p>
+    <p>Humidity: {{weather.main.humidity}}</p>
+    <p>Feels like: {{weather.main.feels_like}}</p>
+</section>
